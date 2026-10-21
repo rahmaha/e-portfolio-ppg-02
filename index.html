@@ -13,14 +13,14 @@
   <div class="nav-logo">
     <span class="path">~/</span>e-portfolio
   </div>
-<!-- 🔹 HAMBURGER -->
+  <!-- HAMBURGER MENU -->
   <div class="menu-toggle" id="menu-toggle">☰</div>
 
   <ul class="nav-links">
     <li><a href="#home">home</a></li>
     <li><a href="#profil">profil</a></li>
 
-    <!-- dropdown: artefak + lampiran + model guru -->
+    <!-- DROPDOWN PORTFOLIO -->
     <li class="nav-dropdown" id="nav-dropdown-portfolio">
       <span class="nav-dropdown-toggle">portfolio ▾</span>
       <div class="nav-dropdown-menu">
@@ -32,7 +32,6 @@
 
     <li><a href="#dokumentasi">dokumentasi</a></li>
     <li><a href="refleksi.html">refleksi</a></li>
-    <li><a href="refleksi-sem01.html">refleksi sem 01</a></li>
     <li><a href="#kontak">kontak</a></li>
   </ul>
   <div class="nav-status">
@@ -44,7 +43,7 @@
 
 <div class="page-wrap">
 
-<!-- HOME -->
+<!-- HOME / HERO -->
 <div id="home" style="background: var(--bg); min-height: 100vh; display:flex; align-items:center;">
   <div class="hero-inner">
     <div>
@@ -64,7 +63,7 @@
       <div class="hero-stats">
         <div class="stat">
           <div class="stat-num">1</div>
-          <div class="stat-label">semester</div>
+          <div class="stat-label">semester 2</div>
         </div>
         <div class="stat">
           <div class="stat-num">5+</div>
@@ -75,12 +74,13 @@
           <div class="stat-label">dokumentasi</div>
         </div>
         <div class="stat">
-          <div class="stat-num">3</div>
+          <div class="stat-num">4</div>
           <div class="stat-label">siklus</div>
         </div>
       </div>
     </div>
 
+    <!-- TERMINAL CARD -->
     <div class="terminal">
       <div class="terminal-bar">
         <div class="t-dot r"></div>
@@ -89,23 +89,23 @@
         <div class="t-title">portfolio.json </div>
       </div>
       <div class="terminal-body">
-        <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> cat portfolio.json</span></div>
-        <div class="t-line gap"></div>
+        <div class="t-line" data-line="1"><span class="t-prompt">$</span><span class="t-cmd"> cat portfolio.json</span></div>
+        <div class="t-line gap" data-line="2"></div>
 
-        <div class="t-line"><span class="t-out">{</span></div>
+        <div class="t-line" data-line="3"><span class="t-out">{</span></div>
 
-        <div class="t-line"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-str">"Rahma Hayuning Astuti"</span>,</span></div>
-        <div class="t-line"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"program"</span>: <span class="t-str">"PPG Prajabatan"</span>,</span></div>
-        <div class="t-line"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"bidang"</span>: <span class="t-str">"Informatika"</span>,</span></div>
+        <div class="t-line" data-line="4"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-str">"Rahma Hayuning Astuti"</span>,</span></div>
+        <div class="t-line" data-line="5"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"program"</span>: <span class="t-str">"PPG Prajabatan"</span>,</span></div>
+        <div class="t-line" data-line="6"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"bidang"</span>: <span class="t-str">"Informatika"</span>,</span></div>
 
-        <div class="t-line"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"Future Educator & IT Enthusiast"</span>,</span></div>
+        <div class="t-line" data-line="7"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"Future Educator & IT Enthusiast"</span>,</span></div>
         <br>
-        <div class="t-line"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-val">true</span>,</span></div>
-        <div class="t-line"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"angkatan"</span>: <span class="t-val">2026</span>,</span></div>
-        <div class="t-line"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"ready"</span>: <span class="t-val">true</span></span></div>
-        <div class="t-line"><span class="t-out">}</span></div>
-        <div class="t-line gap"></div>
-        <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> <span class="t-cursor"></span></span></div>
+        <div class="t-line" data-line="8"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-val">true</span>,</span></div>
+        <div class="t-line" data-line="9"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"angkatan"</span>: <span class="t-val">2026</span>,</span></div>
+        <div class="t-line" data-line="10"><span class="t-out">&nbsp;&nbsp;<span class="t-key">"ready"</span>: <span class="t-val">true</span></span></div>
+        <div class="t-line" data-line="11"><span class="t-out">}</span></div>
+        <div class="t-line gap" data-line="12"></div>
+        <div class="t-line" data-line="13"><span class="t-prompt">$</span><span class="t-cmd"> <span class="t-cursor"></span></span></div>
       </div>
     </div>
   </div>
@@ -130,7 +130,15 @@
           </div>
           <div class="profil-name">Rahma Hayuning Astuti</div>
           <div class="profil-role">// mahasiswa ppg prajabatan 2026</div>
+
+          <!-- TECH BADGES -->
+          <div class="tech-tags">
+            <span class="tag-badge"><i class="dot"></i> Python</span>
+            <span class="tag-badge"><i class="dot"></i> AI / ML</span>
+            <span class="tag-badge"><i class="dot"></i> Kurikulum Merdeka</span>
+          </div>
         </div>
+
         <div class="profil-card-body">
           <div class="profil-row"><span class="profil-row-k">NIM</span><span class="profil-row-v">25105260251</span></div>
           <div class="profil-row"><span class="profil-row-k">Prodi</span><span class="profil-row-v">Pend. Informatika</span></div>
@@ -140,10 +148,23 @@
           <div class="profil-row"><span class="profil-row-k">DPL</span><span class="profil-row-v">Dr. Ir. Drs. Masduki Zakariah, M.T</span></div>
           <div class="profil-row"><span class="profil-row-k">Guru Pamong</span><span class="profil-row-v">Rusli Abdul Hamid, S.Pd</span></div>
         </div>
+
+        <!-- PROGRESS GRAPH WIDGET -->
+        <div class="git-graph">
+          <span class="git-title">// Progress PPL:</span>
+          <div class="git-squares">
+            <span class="sq lvl-3" title="Siklus 1"></span>
+            <span class="sq lvl-4" title="Siklus 1"></span>
+            <span class="sq lvl-2" title="Siklus 2"></span>
+            <span class="sq lvl-4" title="Siklus 2"></span>
+            <span class="sq lvl-3" title="Siklus 3"></span>
+            <span class="sq lvl-4" title="Ujian Mandiri"></span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- narasi asal daerah tetap di kanan foto, biar tidak terlalu sepi -->
+    <!-- narasi asal daerah -->
     <div class="narasi-section">
       <div class="narasi-label">// asal &amp; keunikan daerah</div>
       <p>Saya, Rahma Hayuning Astuti, lahir dan besar di <strong style="color:var(--text);">Demak, Jawa Tengah</strong> — kota yang dikenal sebagai salah satu pusat penyebaran Islam di Nusantara, dengan Masjid Agung Demak yang telah berdiri sejak abad ke-15 sebagai ikonnya. Tumbuh di lingkungan yang kental dengan nilai kebersamaan dan gotong royong mengajarkan saya bahwa belajar bukan proses yang soliter — melainkan sesuatu yang tumbuh subur ketika dilakukan bersama.</p>
@@ -230,7 +251,7 @@
       <button class="filter-btn" onclick="filterMedia('lainnya',this)">lainnya</button>
     </div>
 
-    <!-- hint link muncul/sembunyi sesuai tab aktif -->
+    <!-- hint link -->
     <div class="siklus-hint" id="hint-siklus1" style="display:none;">
       <span>📄 lihat analisis lengkap siklus 1</span>
       <a href="siklus1.html">buka halaman siklus 1 →</a>
@@ -285,7 +306,6 @@
       </div>
 
       <!-- SIKLUS 2 -->
-      <!-- Pertemuan 1-->
       <div class="media-card" data-cat="siklus2">
         <div class="media-thumb"><div class="media-thumb-icon">📄</div><span class="media-type-badge badge-pdf">PDF</span><span class="media-siklus-badge s2">Siklus 2</span></div>
         <div class="media-info">
@@ -319,11 +339,10 @@
           <div class="media-cat">hasil kerja siswa</div>
           <div class="media-title">Hasil Kerja Siswa — [Siklus 2 . Pertemuan 1]</div>
           <a class="media-detail-btn" href="siklus2.html#hasil">lihat analisis →</a>
-          <a class="media-link" href=" https://drive.google.com/file/d/1ha33l59WWqJl0ggKHMrXaXd4Vl1qFUP7/view" target="_blank">↗ Drive</a>
+          <a class="media-link" href="https://drive.google.com/file/d/1ha33l59WWqJl0ggKHMrXaXd4Vl1qFUP7/view" target="_blank">↗ Drive</a>
         </div>
       </div>
 
-      <!-- Pertemuan 2-->
       <div class="media-card" data-cat="siklus2">
         <div class="media-thumb"><div class="media-thumb-icon">📊</div><span class="media-type-badge badge-ppt">PPT</span><span class="media-siklus-badge s2">Siklus 2</span></div>
         <div class="media-info">
@@ -348,7 +367,7 @@
           <div class="media-cat">hasil kerja siswa</div>
           <div class="media-title">Hasil Kerja Siswa — [Siklus 2 . Pertemuan 2]</div>
           <a class="media-detail-btn" href="siklus2.html#hasil">lihat analisis →</a>
-          <a class="media-link" href="https://docs.google.com/spreadsheets/d/1NqS9zr_MG0tRcEHBEgAzkj7n1obTVKj1/view"" target="_blank">↗ Drive</a>
+          <a class="media-link" href="https://docs.google.com/spreadsheets/d/1NqS9zr_MG0tRcEHBEgAzkj7n1obTVKj1/view" target="_blank">↗ Drive</a>
         </div>
       </div>
 
@@ -390,7 +409,7 @@
         </div>
       </div>
 
-      <!--LAINNYA -->
+      <!-- LAINNYA -->
       <div class="media-card" data-cat="lainnya">
         <div class="media-thumb"><div class="media-thumb-icon">📄</div><span class="media-type-badge badge-pdf">PDF</span><span class="media-siklus-badge lainnya">lainnya</span></div>
         <div class="media-info">
@@ -400,84 +419,88 @@
           <a class="media-link" href="https://docs.google.com/document/d/1nw1KtTrjCHg37VhJyCvP4zKMGC8468OF/view" target="_blank">↗ Drive</a>
         </div>
       </div>
+
+      <!-- MODAL BAHAN AJAR -->
       <div class="modal-overlay" id="modal-bahan-ajar">
-      <div class="modal-box">
-        <div class="modal-header">
-          <div class="modal-icon">📚</div>
-          <div>
-            <div class="modal-type">bahan ajar · semua siklus</div>
-            <div class="modal-title">Bahan Ajar — Analisis Data dengan Spreadsheet</div>
+        <div class="modal-box">
+          <div class="modal-header">
+            <div class="modal-icon">📚</div>
+            <div>
+              <div class="modal-type">bahan ajar · semua siklus</div>
+              <div class="modal-title">Bahan Ajar — Analisis Data dengan Spreadsheet</div>
+            </div>
+            <button class="modal-close" onclick="closeModal('modal-bahan-ajar')">✕</button>
           </div>
-          <button class="modal-close" onclick="closeModal('modal-bahan-ajar')">✕</button>
-        </div>
-        <div class="modal-body">
+          <div class="modal-body">
 
-          <div class="analisis-tabs">
-            <button class="atab active" data-tab="lk4"
-              onclick="switchTab('modal-ba-content','lk4')">Analisis</button>
-            <button class="atab" data-tab="file"
-              onclick="switchTab('modal-ba-content','file')">File &amp; Preview</button>
-          </div>
-
-          <div id="modal-ba-content">
-
-            <div class="analisis-panel panel-lk4 active">
-              <div style="padding:1.4rem 1.6rem;">
-                <div class="analisis-grid">
-                  <div class="analisis-card">
-                    <div class="analisis-card-label">Konteks</div>
-                    <div class="analisis-card-text">Digunakan sebagai referensi belajar mandiri siswa kelas X TKR selama 3 siklus PPL Terbimbing — mencakup materi pengumpulan data, analisis dengan fungsi Excel, hingga visualisasi grafik.</div>
-                  </div>
-                  <div class="analisis-card">
-                    <div class="analisis-card-label">Tujuan</div>
-                    <div class="analisis-card-text">Menyediakan panduan tertulis yang bisa diakses siswa kapan saja — baik saat pembelajaran berlangsung maupun saat belajar mandiri di luar kelas.</div>
-                  </div>
-                  <div class="analisis-card">
-                    <div class="analisis-card-label">Kelebihan</div>
-                    <div class="analisis-card-text">Materi disajikan secara runtut mengikuti alur 3 siklus, disertai contoh kontekstual yang relevan dengan kehidupan siswa SMK, dan langkah-langkah operasional yang jelas.</div>
-                  </div>
-                  <div class="analisis-card">
-                    <div class="analisis-card-label">Kekurangan</div>
-                    <div class="analisis-card-text">Bahan ajar masih berbasis teks dan belum dilengkapi elemen interaktif atau visual yang kaya — beberapa bagian terutama penjelasan fungsi VLOOKUP dan HLOOKUP masih cukup padat dan memerlukan pendampingan guru untuk dipahami sepenuhnya.</div>
-                  </div>
-                </div>
-                <div class="analisis-card" style="margin-top:0;">
-                  <div class="analisis-card-label">Kajian Teori yang Terintegrasi</div>
-                  <div class="analisis-card-text">Bahan ajar dirancang berdasarkan prinsip meaningful learning Ausubel — materi disusun dari konsep yang sudah dikenal siswa menuju yang baru dan lebih kompleks. Urutan konten juga mempertimbangkan cognitive load theory (Sweller) dengan memecah materi kompleks menjadi bagian-bagian yang lebih kecil dan terstruktur agar tidak membebani memori kerja siswa.</div>
-                </div>
-              </div>
+            <div class="analisis-tabs">
+              <button class="atab active" data-tab="lk4"
+                onclick="switchTab('modal-ba-content','lk4')">Analisis</button>
+              <button class="atab" data-tab="file"
+                onclick="switchTab('modal-ba-content','file')">File &amp; Preview</button>
             </div>
 
-            <div class="analisis-panel panel-file">
-              <div style="padding:1.4rem 1.6rem;">
-                <a href="https://docs.google.com/document/d/1nw1KtTrjCHg37VhJyCvP4zKMGC8468OF/view" target="_blank"
-                  style="display:block;width:100%;aspect-ratio:16/9;background:var(--bg3);
-                        border:1px solid var(--border2);border-radius:6px;overflow:hidden;
-                        margin-bottom:1rem;text-decoration:none;position:relative;">
-                  <img src="https://drive.google.com/thumbnail?id=1nw1KtTrjCHg37VhJyCvP4zKMGC8468OF&sz=w800"
-                    style="width:100%;height:100%;object-fit:cover;opacity:0.7;"
-                    onerror="this.style.display='none'">
-                  <div style="position:absolute;inset:0;display:flex;align-items:center;
-                              justify-content:center;color:var(--amber);font-size:0.8rem;
-                              font-family:var(--mono);">▶ klik untuk buka file</div>
-                </a>
-                <div class="drive-preview">
-                  <div class="drive-icon">📚</div>
-                  <div class="drive-info">
-                    <div class="drive-name">Bahan Ajar — Analisis Data dengan Spreadsheet</div>
-                    <div class="drive-meta">Google Drive · digunakan selama 3 siklus</div>
+            <div id="modal-ba-content">
+
+              <div class="analisis-panel panel-lk4 active">
+                <div style="padding:1.4rem 1.6rem;">
+                  <div class="analisis-grid">
+                    <div class="analisis-card">
+                      <div class="analisis-card-label">Konteks</div>
+                      <div class="analisis-card-text">Digunakan sebagai referensi belajar mandiri siswa kelas X TKR selama 3 siklus PPL Terbimbing — mencakup materi pengumpulan data, analisis dengan fungsi Excel, hingga visualisasi grafik.</div>
+                    </div>
+                    <div class="analisis-card">
+                      <div class="analisis-card-label">Tujuan</div>
+                      <div class="analisis-card-text">Menyediakan panduan tertulis yang bisa diakses siswa kapan saja — baik saat pembelajaran berlangsung maupun saat belajar mandiri di luar kelas.</div>
+                    </div>
+                    <div class="analisis-card">
+                      <div class="analisis-card-label">Kelebihan</div>
+                      <div class="analisis-card-text">Materi disajikan secara runtut mengikuti alur 3 siklus, disertai contoh kontekstual yang relevan dengan kehidupan siswa SMK, dan langkah-langkah operasional yang jelas.</div>
+                    </div>
+                    <div class="analisis-card">
+                      <div class="analisis-card-label">Kekurangan</div>
+                      <div class="analisis-card-text">Bahan ajar masih berbasis teks dan belum dilengkapi elemen interaktif atau visual yang kaya — beberapa bagian terutama penjelasan fungsi VLOOKUP dan HLOOKUP masih cukup padat dan memerlukan pendampingan guru untuk dipahami sepenuhnya.</div>
+                    </div>
                   </div>
+                  <div class="analisis-card" style="margin-top:0;">
+                    <div class="analisis-card-label">Kajian Teori yang Terintegrasi</div>
+                    <div class="analisis-card-text">Bahan ajar dirancang berdasarkan prinsip meaningful learning Ausubel — materi disusun dari konsep yang sudah dikenal siswa menuju yang baru dan lebih kompleks. Urutan konten juga mempertimbangkan cognitive load theory (Sweller) dengan memecah materi kompleks menjadi bagian-bagian yang lebih kecil dan terstruktur agar tidak membebani memori kerja siswa.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="analisis-panel panel-file">
+                <div style="padding:1.4rem 1.6rem;">
                   <a href="https://docs.google.com/document/d/1nw1KtTrjCHg37VhJyCvP4zKMGC8468OF/view" target="_blank"
-                    class="btn-primary" style="font-size:0.72rem;padding:8px 16px;">
-                    buka Drive ↗
+                    style="display:block;width:100%;aspect-ratio:16/9;background:var(--bg3);
+                          border:1px solid var(--border2);border-radius:6px;overflow:hidden;
+                          margin-bottom:1rem;text-decoration:none;position:relative;">
+                    <img src="https://drive.google.com/thumbnail?id=1nw1KtTrjCHg37VhJyCvP4zKMGC8468OF&sz=w800"
+                      style="width:100%;height:100%;object-fit:cover;opacity:0.7;"
+                      onerror="this.style.display='none'">
+                    <div style="position:absolute;inset:0;display:flex;align-items:center;
+                                justify-content:center;color:var(--amber);font-size:0.8rem;
+                                font-family:var(--mono);">▶ klik untuk buka file</div>
                   </a>
+                  <div class="drive-preview">
+                    <div class="drive-icon">📚</div>
+                    <div class="drive-info">
+                      <div class="drive-name">Bahan Ajar — Analisis Data dengan Spreadsheet</div>
+                      <div class="drive-meta">Google Drive · digunakan selama 3 siklus</div>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1nw1KtTrjCHg37VhJyCvP4zKMGC8468OF/view" target="_blank"
+                      class="btn-primary" style="font-size:0.72rem;padding:8px 16px;">
+                      buka Drive ↗
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -487,66 +510,61 @@
   <div class="prompt"><span class="prompt-path">~/lampiran</span> — penilaian gp</div>
   <div class="sec-label">03 // lampiran 7 &amp; 8</div>
   <h2>Penilaian dari Guru Pamong</h2>
-  <!---Lampiran 7 -->
+
+  <!-- Lampiran 7 -->
   <div class="lampiran-block">
-  <div class="lampiran-header">
-    <div class="lampiran-num">Lampiran 7</div>
-    <div class="lampiran-title">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</div>
-    <div class="lampiran-desc">Penilaian GP terhadap Modul Ajar, LKPD, Media, dan Instrumen Penilaian · berlaku untuk 3 siklus.</div>
+    <div class="lampiran-header">
+      <div class="lampiran-num">Lampiran 7</div>
+      <div class="lampiran-title">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</div>
+      <div class="lampiran-desc">Penilaian GP terhadap Modul Ajar, LKPD, Media, dan Instrumen Penilaian · berlaku untuk 3 siklus.</div>
+    </div>
+    <div style="padding:1.4rem 1.6rem;">
+      <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:0.5rem;">
+        <div class="ls-score">19</div>
+        <div style="font-size:0.8rem;color:var(--muted);">/ 24</div>
+        <div style="margin-left:auto;font-size:0.8rem;color:var(--amber);font-weight:700;">79%</div>
+      </div>
+      <div style="height:4px;background:var(--border2);border-radius:10px;margin-bottom:1.2rem;">
+        <div style="width:79%;height:100%;background:var(--amber);border-radius:10px;"></div>
+      </div>
+      <div style="font-size:0.75rem;color:var(--muted);font-style:italic;margin-bottom:1rem;border-left:2px solid var(--amber);padding-left:0.8rem;">
+        Catatan GP: Perangkat Pembelajaran Sudah Lengkap
+      </div>
+      <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+        <a class="media-link" href="https://drive.google.com/file/d/1pGdSOomSLBprue9lFq_U7jhHkD_GseCn/view" target="_blank">↗ dokumen siklus 1</a>
+        <a class="media-link" href="https://drive.google.com/file/d/1mSDvkiBWbj9Vh4NXbT1lKyF_pUuHPs3W/view" target="_blank">↗ dokumen siklus 2</a>
+        <a class="media-link" href="https://drive.google.com/file/d/1ykFi4HZ0MKf_DP8P4d6vO5Mra_SdW5-g/view" target="_blank">↗ dokumen siklus 3</a>
+      </div>
+    </div>
   </div>
-  <div style="padding:1.4rem 1.6rem;">
 
-    <!-- skor -->
-    <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:0.5rem;">
-      <div class="ls-score">19</div>
-      <div style="font-size:0.8rem;color:var(--muted);">/ 24</div>
-      <div style="margin-left:auto;font-size:0.8rem;color:var(--amber);font-weight:700;">79%</div>
-    </div>
-    <div style="height:4px;background:var(--border2);border-radius:10px;margin-bottom:1.2rem;">
-      <div style="width:79%;height:100%;background:var(--amber);border-radius:10px;"></div>
-    </div>
-    <!--catatan-->
-    <div style="font-size:0.75rem;color:var(--muted);font-style:italic;margin-bottom:1rem;border-left:2px solid var(--amber);padding-left:0.8rem;">
-      Catatan GP: Perangkat Pembelajaran Sudah Lengkap
-    </div>
-
-    <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
-      <a class="media-link" href="https://drive.google.com/file/d/1pGdSOomSLBprue9lFq_U7jhHkD_GseCn/view" target="_blank">↗ dokumen siklus 1</a>
-      <a class="media-link" href="https://drive.google.com/file/d/1mSDvkiBWbj9Vh4NXbT1lKyF_pUuHPs3W/view" target="_blank">↗ dokumen siklus 2</a>
-      <a class="media-link" href="https://drive.google.com/file/d/1ykFi4HZ0MKf_DP8P4d6vO5Mra_SdW5-g/view" target="_blank">↗ dokumen siklus 3</a>
-    </div>
-  </div>
-  </div>
   <br>
-  <!--Lampiran 8-->
-   <div class="lampiran-block">
-  <div class="lampiran-header">
-    <div class="lampiran-num">Lampiran 8</div>
-    <div class="lampiran-title">Instrumen Penilaian Pelaksanaan Pembelajaran</div>
-    <div class="lampiran-desc">Penilaian GP terhadap melaksanakan pembelajaran di kelas· berlaku untuk 3 siklus.</div>
-  </div>
-  <div style="padding:1.4rem 1.6rem;">
 
-    <!-- skor -->
-    <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:0.5rem;">
-      <div class="ls-score">34</div>
-      <div style="font-size:0.8rem;color:var(--muted);">/ 48</div>
-      <div style="margin-left:auto;font-size:0.8rem;color:var(--amber);font-weight:700;">71%</div>
+  <!-- Lampiran 8 -->
+  <div class="lampiran-block">
+    <div class="lampiran-header">
+      <div class="lampiran-num">Lampiran 8</div>
+      <div class="lampiran-title">Instrumen Penilaian Pelaksanaan Pembelajaran</div>
+      <div class="lampiran-desc">Penilaian GP terhadap melaksanakan pembelajaran di kelas · berlaku untuk 3 siklus.</div>
     </div>
-    <div style="height:4px;background:var(--border2);border-radius:10px;margin-bottom:1.2rem;">
-      <div style="width:71%;height:100%;background:var(--amber);border-radius:10px;"></div>
+    <div style="padding:1.4rem 1.6rem;">
+      <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:0.5rem;">
+        <div class="ls-score">34</div>
+        <div style="font-size:0.8rem;color:var(--muted);">/ 48</div>
+        <div style="margin-left:auto;font-size:0.8rem;color:var(--amber);font-weight:700;">71%</div>
+      </div>
+      <div style="height:4px;background:var(--border2);border-radius:10px;margin-bottom:1.2rem;">
+        <div style="width:71%;height:100%;background:var(--amber);border-radius:10px;"></div>
+      </div>
+      <div style="font-size:0.75rem;color:var(--muted);font-style:italic;margin-bottom:1rem;border-left:2px solid var(--amber);padding-left:0.8rem;">
+        Catatan GP: Pembelajaran berjalan dengan lancar. Tingkatkan intonasi suara.
+      </div>
+      <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+        <a class="media-link" href="https://drive.google.com/file/d/1TxfWuLM4GYpTBEicS7BqR8PVAiLc33Mn/view" target="_blank">↗ dokumen siklus 1</a>
+        <a class="media-link" href="https://drive.google.com/file/d/1jSLgINpdXsZAr-vCZlZ1wvwciop82GP2/view" target="_blank">↗ dokumen siklus 2</a>
+        <a class="media-link" href="https://drive.google.com/file/d/1FEs8YctiIxfS5W0vdgww3l-KgGZS3kDA/view" target="_blank">↗ dokumen siklus 3</a>
+      </div>
     </div>
-    <!--catatan-->
-    <div style="font-size:0.75rem;color:var(--muted);font-style:italic;margin-bottom:1rem;border-left:2px solid var(--amber);padding-left:0.8rem;">
-      Catatan GP: Pembelajaran berjalan dengan lancar. Tingkatkan intonasi suara.
-    </div>
-
-    <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
-      <a class="media-link" href="https://drive.google.com/file/d/1TxfWuLM4GYpTBEicS7BqR8PVAiLc33Mn/view" target="_blank">↗ dokumen siklus 1</a>
-      <a class="media-link" href="https://drive.google.com/file/d/1jSLgINpdXsZAr-vCZlZ1wvwciop82GP2/view" target="_blank">↗ dokumen siklus 2</a>
-      <a class="media-link" href="https://drive.google.com/file/d/1FEs8YctiIxfS5W0vdgww3l-KgGZS3kDA/view" target="_blank">↗ dokumen siklus 3</a>
-    </div>
-  </div>
   </div>
 </section>
 
@@ -604,98 +622,98 @@
   <p class="lead">Rekam jejak PPL di SMK N 2 Depok Sleman.</p>
   <div class="timeline">
 
-  <div class="tl-item">
-    <div class="tl-date"><strong>Februari</strong>Awal Program</div>
-    <div class="tl-content">
-      <div class="tl-title">Orientasi &amp; Pembekalan PPG</div>
-      <div class="tl-desc">Pengenalan program PPG Prajabatan, kurikulum merdeka, pengarahan sekolah mitra SMK N 2 Depok Sleman, dan pembentukan kelompok belajar mahasiswa.</div>
-      <div class="tl-photos">
-        <a class="tl-photo" target="_blank">
-          <img src="assets/orientasi-1.jpeg" alt="Orientasi"
-            onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto orientasi</div>'">
-        </a>
-         <a class="tl-photo" target="_blank">
-          <img src="assets/orientasi-2.jpeg" alt="Orientasi"
-            onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto orientasi</div>'">
-        </a>
-      </div>
-      <div class="tl-tags">
-        <span class="tl-tag tl-foto">📷 foto</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-date"><strong>Feb - April</strong>Bimbingan</div>
-    <div class="tl-content">
-      <div class="tl-title">Bimbingan DPL &amp; Guru Pamong</div>
-      <div class="tl-desc">Sesi bimbingan bersama Dr. Ir. Drs. Masduki Zakariah, M.T dan Rusli Abdul Hamid, S.Pd — revisi perangkat ajar, evaluasi praktik, dan diskusi pengembangan pembelajaran.</div>
-      <div class="tl-photos">
-        <a class="tl-photo" target="_blank">
-          <img src="assets/bimbingan pak rusli.jpeg" alt="Bimbingan"
-            onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto bimbingan</div>'">
-        </a>
-        <a class="tl-photo" target="_blank">
-          <img src="assets/sama-pak-masduki.jpeg" alt="Bimbingan"
-            onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto bimbingan</div>'">
-        </a>
-      </div>
-      <div class="tl-tags">
-        <span class="tl-tag tl-foto">📷 foto</span>
+    <div class="tl-item">
+      <div class="tl-date"><strong>Februari</strong>Awal Program</div>
+      <div class="tl-content">
+        <div class="tl-title">Orientasi &amp; Pembekalan PPG</div>
+        <div class="tl-desc">Pengenalan program PPG Prajabatan, kurikulum merdeka, pengarahan sekolah mitra SMK N 2 Depok Sleman, dan pembentukan kelompok belajar mahasiswa.</div>
+        <div class="tl-photos">
+          <a class="tl-photo" target="_blank">
+            <img src="assets/orientasi-1.jpeg" alt="Orientasi"
+              onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto orientasi</div>'">
+          </a>
+          <a class="tl-photo" target="_blank">
+            <img src="assets/orientasi-2.jpeg" alt="Orientasi"
+              onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto orientasi</div>'">
+          </a>
+        </div>
+        <div class="tl-tags">
+          <span class="tl-tag tl-foto">📷 foto</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="tl-item">
-    <div class="tl-date"><strong>April</strong>PPL</div>
-    <div class="tl-content">
-      <div class="tl-title">Praktik Mengajar — 3 Siklus</div>
-      <div class="tl-desc">Pelaksanaan PPL Terbimbing di SMK N 2 Depok Sleman selama 3 siklus. Setiap siklus mencakup perencanaan, pelaksanaan, observasi, dan refleksi bersama GP dan DPL.</div>
-      <div class="tl-photos">
-        <a class="tl-photo" target="_blank">
-          <img src="assets/siklus1.jpeg" alt="Siklus 1"
-            onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>siklus 1</div>'">
-        </a>
-        <a class="tl-photo" target="_blank">
-          <img src="assets/siklus2.jpeg" alt="Siklus 2"
-            onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>siklus 1</div>'">
-        </a>
-        <a class="tl-photo" target="_blank">
-          <img src="assets/siklus3.jpeg" alt="Siklus 3"
-            onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>siklus 1</div>'">
-        </a>
-      </div>
-      <div class="tl-tags">
-        <span class="tl-tag tl-foto">📷 foto</span>
-        <a href="siklus1.html" style="font-size:0.68rem;color:var(--amber);text-decoration:none;margin-left:4px;">↗ siklus 1</a>
-        <a href="siklus2.html" style="font-size:0.68rem;color:var(--amber);text-decoration:none;margin-left:4px;">↗ siklus 2</a>
-        <a href="siklus3.html" style="font-size:0.68rem;color:var(--amber);text-decoration:none;margin-left:4px;">↗ siklus 3</a>
+    <div class="tl-item">
+      <div class="tl-date"><strong>Feb - April</strong>Bimbingan</div>
+      <div class="tl-content">
+        <div class="tl-title">Bimbingan DPL &amp; Guru Pamong</div>
+        <div class="tl-desc">Sesi bimbingan bersama Dr. Ir. Drs. Masduki Zakariah, M.T dan Rusli Abdul Hamid, S.Pd — revisi perangkat ajar, evaluasi praktik, dan diskusi pengembangan pembelajaran.</div>
+        <div class="tl-photos">
+          <a class="tl-photo" target="_blank">
+            <img src="assets/bimbingan pak rusli.jpeg" alt="Bimbingan"
+              onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto bimbingan</div>'">
+          </a>
+          <a class="tl-photo" target="_blank">
+            <img src="assets/sama-pak-masduki.jpeg" alt="Bimbingan"
+              onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto bimbingan</div>'">
+          </a>
+        </div>
+        <div class="tl-tags">
+          <span class="tl-tag tl-foto">📷 foto</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="tl-item">
-    <div class="tl-date"><strong>April</strong>Penutup</div>
-    <div class="tl-content">
-      <div class="tl-title">Pamit di SMK N 2 Depok</div>
-      <div class="tl-desc">Momen pamit bersama guru-guru SMK N 2 Depok Sleman yang selama ini menerima dan membimbing kami dengan hangat. Bukan acara formal, tapi justru momen ini yang paling berkesan dari seluruh perjalanan PPL.</div>
-      <div class="tl-photos">
-        <a class="tl-photo" target="_blank">
-          <img src="assets/penutup-1.jpeg" alt="Pamit"
-            onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto perpisahan</div>'">
-        </a>
-        <a class="tl-photo" target="_blank">
-          <img src="assets/penutup-2.jpeg" alt="Pamit"
-            onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto perpisahan</div>'">
-        </a>
-      </div>
-      <div class="tl-tags">
-        <span class="tl-tag tl-foto">📷 foto</span>
+    <div class="tl-item">
+      <div class="tl-date"><strong>April</strong>PPL</div>
+      <div class="tl-content">
+        <div class="tl-title">Praktik Mengajar — 3 Siklus</div>
+        <div class="tl-desc">Pelaksanaan PPL Terbimbing di SMK N 2 Depok Sleman selama 3 siklus. Setiap siklus mencakup perencanaan, pelaksanaan, observasi, dan refleksi bersama GP dan DPL.</div>
+        <div class="tl-photos">
+          <a class="tl-photo" target="_blank">
+            <img src="assets/siklus1.jpeg" alt="Siklus 1"
+              onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>siklus 1</div>'">
+          </a>
+          <a class="tl-photo" target="_blank">
+            <img src="assets/siklus2.jpeg" alt="Siklus 2"
+              onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>siklus 2</div>'">
+          </a>
+          <a class="tl-photo" target="_blank">
+            <img src="assets/siklus3.jpeg" alt="Siklus 3"
+              onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>siklus 3</div>'">
+          </a>
+        </div>
+        <div class="tl-tags">
+          <span class="tl-tag tl-foto">📷 foto</span>
+          <a href="siklus1.html" style="font-size:0.68rem;color:var(--amber);text-decoration:none;margin-left:4px;">↗ siklus 1</a>
+          <a href="siklus2.html" style="font-size:0.68rem;color:var(--amber);text-decoration:none;margin-left:4px;">↗ siklus 2</a>
+          <a href="siklus3.html" style="font-size:0.68rem;color:var(--amber);text-decoration:none;margin-left:4px;">↗ siklus 3</a>
+        </div>
       </div>
     </div>
-  </div>
 
-</div>
+    <div class="tl-item">
+      <div class="tl-date"><strong>April</strong>Penutup</div>
+      <div class="tl-content">
+        <div class="tl-title">Pamit di SMK N 2 Depok</div>
+        <div class="tl-desc">Momen pamit bersama guru-guru SMK N 2 Depok Sleman yang selama ini menerima dan membimbing kami dengan hangat. Bukan acara formal, tapi justru momen ini yang paling berkesan dari seluruh perjalanan PPL.</div>
+        <div class="tl-photos">
+          <a class="tl-photo" target="_blank">
+            <img src="assets/penutup-1.jpeg" alt="Pamit"
+              onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto perpisahan</div>'">
+          </a>
+          <a class="tl-photo" target="_blank">
+            <img src="assets/penutup-2.jpeg" alt="Pamit"
+              onerror="this.parentElement.innerHTML='<div class=\'tl-photo-placeholder\'><span>📷</span>foto perpisahan</div>'">
+          </a>
+        </div>
+        <div class="tl-tags">
+          <span class="tl-tag tl-foto">📷 foto</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <!-- KONTAK -->
@@ -705,9 +723,8 @@
     <div class="sec-label">07 // kontak</div>
     <h2>Hubungi Saya</h2>
     <p class="lead">Tertarik untuk berdiskusi, kolaborasi, atau sekadar bertukar ide? Silakan hubungi saya melalui kontak berikut.</p>
-    <!-- 🔹 Tombol Sosial -->
-     <div class="contact-wrapper">
 
+    <div class="contact-wrapper">
       <!-- KIRI: tombol kontak -->
       <div class="contact-left">
         <div class="contact-buttons">
@@ -720,39 +737,29 @@
       <!-- KANAN: grid 4 foto -->
       <div class="contact-right">
         <div class="contact-photo-grid">
-
-          <!-- foto 1: Tentang Saya -->
           <a class="contact-photo" target="_blank">
-            <img src="assets/fotoku-2.jpeg"
-              alt="Tentang Saya"
+            <img src="assets/fotoku-2.jpeg" alt="Tentang Saya"
               onerror="this.parentElement.innerHTML='<div class=\'contact-photo-placeholder\'><span>👥</span>Tentang Saya</div>'">
             <div class="contact-photo-label">Tentang Saya</div>
           </a>
 
-          <!-- foto 2: tim PPL -->
           <a class="contact-photo" target="_blank">
-            <img src="assets/tim ppl.jpeg"
-              alt="Tim PPL Pak Rusli"
+            <img src="assets/tim ppl.jpeg" alt="Tim PPL Pak Rusli"
               onerror="this.parentElement.innerHTML='<div class=\'contact-photo-placeholder\'><span>🤝</span>Tim PPL</div>'">
             <div class="contact-photo-label">Tim PPL Pak Rusli</div>
           </a>
 
-          <!-- foto 3: tim PPL Informatika -->
           <a class="contact-photo" target="_blank">
-            <img src="assets/tim ppl informatika.jpeg"
-              alt="Tim PPL Informatika"
+            <img src="assets/tim ppl informatika.jpeg" alt="Tim PPL Informatika"
               onerror="this.parentElement.innerHTML='<div class=\'contact-photo-placeholder\'><span>🐱</span>github</div>'">
             <div class="contact-photo-label">Tim PPL Informatika</div>
           </a>
 
-          <!-- foto 4: tim PPL UNY -->
           <a class="contact-photo" target="_blank">
-            <img src="assets/penutup-1.jpeg"
-              alt="tim PPL UNY"
+            <img src="assets/penutup-1.jpeg" alt="tim PPL UNY"
               onerror="this.parentElement.innerHTML='<div class=\'contact-photo-placeholder\'><span>💻</span>publikasi</div>'">
             <div class="contact-photo-label">TIM PPL UNY</div>
           </a>
-
         </div>
       </div>
     </div>
@@ -760,11 +767,33 @@
 </section>
 
 <footer>
-  <div><div class="footer-logo">e-portfolio · ppg prajabatan 2026</div><div style="margin-top:4px;">Rahma Hayuning Astuti · Informatika · UNY</div></div>
-  <div class="footer-r"><span>built with ♥ &amp; caffeine</span><span style="color:var(--border2);">|</span><span>github pages</span></div>
+  <div>
+    <div class="footer-logo">e-portfolio · ppg prajabatan 2026</div>
+    <div style="margin-top:4px;">Rahma Hayuning Astuti · Informatika · UNY</div>
+  </div>
+  <div class="footer-r">
+    <span>built with ♥ &amp; caffeine</span>
+    <span style="color:var(--border2);">|</span>
+    <span>github pages</span>
+  </div>
 </footer>
 
+</div> <!-- END PAGE-WRAP -->
+
+<!-- FLOATING NAV DOCK -->
+<div class="floating-dock">
+  <a href="#home" title="Home">🏠</a>
+  <a href="#profil" title="Profil">👤</a>
+  <a href="#artefak" title="Artefak">📁</a>
+  <a href="#lampiran" title="Lampiran">📜</a>
+  <a href="#model-guru" title="Model Guru">🎯</a>
+  <a href="#dokumentasi" title="Dokumentasi">📷</a>
+  <a href="refleksi-sem02.html" title="Refleksi">🧠</a>
+  <a href="#kontak" title="Kontak">✉️</a>
+  <!-- TOMBOL TEMA -->
+  <a href="javascript:void(0)" id="theme-toggle" title="Ganti Tema">🌙</a>
 </div>
+
 <script src="shared.js"></script>
 </body>
 </html>

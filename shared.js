@@ -80,6 +80,18 @@ document.addEventListener('keydown', (e) => {
     document.querySelectorAll('.modal-overlay.open').forEach(m => closeModal(m.id));
   }
 });
+// Auto detect OS theme
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+function applyTheme(isDark) {
+  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+}
+
+// Set tema awal sesuai OS
+applyTheme(systemPrefersDark.matches);
+
+// Otomatis ubah kalau tema OS berubah
+systemPrefersDark.addEventListener('change', (e) => applyTheme(e.matches));
 
 // ===============================
 // SCROLL REVEAL
@@ -229,3 +241,48 @@ document.addEventListener('DOMContentLoaded', () => {
   window.dispatchEvent(new Event('scroll'));
 
 }); // end DOMContentLoaded
+
+//Ganti Tema LIGHT
+document.addEventListener('DOMContentLoaded', () => {
+  const themeBtn = document.getElementById('theme-toggle');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme-preference', theme);
+
+    if (themeBtn) {
+      // Cek apakah tombol berupa tag <a> (Floating dock) atau <button> (Footer)
+      if (themeBtn.tagName === 'A') {
+        themeBtn.textContent = theme === 'light' ? '☀️' : '🌙';
+      } else {
+        themeBtn.textContent = theme === 'light' ? '☀️ Mode Gelap' : '🌙 Mode Terang';
+      }
+    }
+  }
+
+  // 1. Cek simpanan tema di localStorage / ikuti laptop
+  const savedTheme = localStorage.getItem('theme-preference');
+  if (savedTheme) {
+    applyTheme(savedTheme);
+  } else {
+    applyTheme(systemPrefersDark.matches ? 'dark' : 'light');
+  }
+
+  // 2. Event Klik Tombol
+  if (themeBtn) {
+    themeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      applyTheme(newTheme);
+    });
+  }
+
+  // 3. Otomatis ubah kalo settingan laptop pengguna berubah
+  systemPrefersDark.addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme-preference')) {
+      applyTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+});
