@@ -1,7 +1,7 @@
 # E-Portfolio PPG Prajabatan 2026
 **Rahma Hayuning Astuti** · Pendidikan Informatika · Universitas Negeri Yogyakarta
 
-> 🌐 **Link Website:** [rahmaha.github.io/e-portfolio-ppg-01](https://rahmaha.github.io/e-portfolio-ppg-01)
+> 🌐 **Link Website:** [rahmaha.github.io/e-portfolio-ppg-01](https://rahmaha.github.io/e-portfolio-ppg-02)
 
 ---
 
