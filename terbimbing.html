@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPL Terbimbing — Analisis Artefak &amp; Video Pembelajaran</title>
+<link rel="stylesheet" href="shared.css">
+</head>
+<body data-page="terbimbing">
+
+<!-- GARIS PROGRESS SCROLL -->
+<div class="scroll-progress" id="scroll-progress"></div>
+<div class="grid-bg"></div>
+
+<!-- NAVIGATION BAR -->
+<nav>
+  <div class="nav-logo">
+    <span class="path">~/</span>e-portfolio
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">← home</a></li>
+    <li><a href="index.html#profil">profil</a></li>
+
+    <!-- DROPDOWN SIKLUS -->
+    <li class="nav-dropdown" id="nav-dropdown-siklus">
+      <span class="nav-dropdown-toggle">siklus ▾</span>
+      <div class="nav-dropdown-menu">
+        <a href="siklus1.html" class="active"><span class="dd-num">01</span> Siklus 1</a>
+        <a href="siklus2.html"><span class="dd-num">02</span> Siklus 2</a>
+        <a href="siklus3.html"><span class="dd-num">03</span> Siklus 3</a>
+        <a href="siklus4.html"><span class="dd-num">04</span> Siklus 4</a>
+      </div>
+    </li>
+
+    <li><a href="refleksi.html">refleksi</a></li>
+    <li><a href="index.html#kontak">kontak</a></li>
+  </ul>
+
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    <span class="status-full">siklus 01 • PPG Prajabatan 2026</span>
+    <span class="status-short">siklus 01</span>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+<!-- ================= HERO SIKLUS ================= -->
+<section style="padding-top: 8rem; padding-bottom: 3rem;">
+  <div style="display:inline-flex;align-items:center;gap:8px;font-size:0.7rem;color:var(--muted);border:1px solid var(--border2);padding:5px 14px;border-radius:3px;margin-bottom:1.5rem;letter-spacing:0.1em;">
+    <span style="color:var(--amber)">#</span>analisis artefak &amp; video · ppl mandiri 2026
+  </div>
+  <h1 style="font-family:var(--sans);font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.1;margin-bottom:0.8rem;">
+    <span style="color:var(--amber);">Siklus 1</span> —<br>Pseudocode
+  </h1>
+  <p style="color:var(--muted);font-size:0.9rem;max-width:640px;line-height:1.8;margin-bottom:1.8rem;">
+    <strong>Kelas:</strong> X Teknik Permesinan · <strong>Materi:</strong> Pseudocode · <strong>Lokasi:</strong> SMK N 2 Depok Sleman<br>
+    Setiap artefak dianalisis berdasarkan konteks, tujuan, kelebihan, kekurangan, dan kajian teori.
+  </p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;">
+    <a href="index.html#artefak" class="btn-ghost">← Kembali ke Beranda</a>
+    <a href="#video-pembelajaran" class="btn-primary">▶ Tonton Video Praktik</a>
+    <a href="siklus2.html" class="btn-ghost">Lanjut ke Siklus 2 →</a>
+  </div>
+</section>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 0 2rem 6rem;">
+
+  <!-- ================= SECTION 01: VIDEO PEMBELAJARAN ================= -->
+  <section id="video-pembelajaran" class="reveal" style="margin-bottom: 3.5rem;">
+    <div class="prompt"><span class="prompt-path">~/siklus1/video</span> — rekaman praktik mengajar</div>
+    <div class="sec-label">00 // video pembelajaran</div>
+    <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">Video Pelaksanaan Pembelajaran</h2>
+
+    <div class="artefak-block" style="padding: 0; overflow: hidden; background: var(--bg2); border: 1px solid var(--border2); border-radius: 6px;">
+      <!-- RESPONSIVE EMBED VIDEO (16:9) -->
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
+        <!-- Ganti LINK EMBED YOUTUBE atau DRIVE kamu di src -->
+        <iframe
+          src="https://www.youtube.com/embed/HjHEIWtcn4s" 
+          title="Video Pembelajaran Siklus 1"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div style="padding: 1.2rem; font-size: 0.8rem; color: var(--muted); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.8rem;">
+        <div>
+          📌 <strong>Topik Video:</strong> Praktik Mengajar Siklus 1 — Pseudocode untuk Siswa X Teknik Permesinan.
+        </div>
+        <a href="https://youtube.com" target="_blank" class="media-link">↗ Buka di Tab Baru</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 02: DOKUMENTASI FOTO ================= -->
+  <section class="reveal" style="margin-bottom: 3.5rem;">
+    <div class="prompt"><span class="prompt-path">~/siklus1/dokumentasi</span> — galeri foto</div>
+    <div class="sec-label">01 // foto kegiatan</div>
+    <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">Foto Dokumentasi Kelas</h2>
+
+    <div class="galeri-siklus" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+      <a class="galeri-foto" target="_blank" style="aspect-ratio: 4/3; background: var(--bg2); border-radius: 6px; overflow: hidden; border: 1px solid var(--border2); display: block;">
+        <img src="assets/siklus1.jpeg" alt="Dokumentasi Siklus 1" style="width:100%; height:100%; object-fit:cover;" onerror="this.parentElement.innerHTML='<div style=\'display:flex;height:100%;align-items:center;justify-content:center;font-size:0.75rem;color:var(--muted);\'>📷 Foto Kelas 1</div>'">
+      </a>
+      <a class="galeri-foto" target="_blank" style="aspect-ratio: 4/3; background: var(--bg2); border-radius: 6px; overflow: hidden; border: 1px solid var(--border2); display: block;">
+        <img src="assets/siklus1_2.jpeg" alt="Dokumentasi Siklus 1" style="width:100%; height:100%; object-fit:cover;" onerror="this.parentElement.innerHTML='<div style=\'display:flex;height:100%;align-items:center;justify-content:center;font-size:0.75rem;color:var(--muted);\'>📷 Foto Praktik</div>'">
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 03: ARTEFAK PERANGKAT ================= -->
+  <section class="reveal">
+    <div class="prompt"><span class="prompt-path">~/siklus1/artefak</span> — modul, media, lkpd &amp; hasil kerja</div>
+    <div class="sec-label">02 // artefak produk</div>
+    <h2 style="font-size: 1.4rem; margin-bottom: 1.5rem;">Analisis &amp; Live Preview Artefak Pembelajaran</h2>
+
+    <!-- 1. MODUL AJAR (PDF / GOOGLE DOCS) -->
+    <div id="modul" class="artefak-block" style="margin-bottom: 2rem;">
+      <div class="artefak-header">
+        <div class="artefak-icon">📄</div>
+        <div>
+          <div class="artefak-type">modul ajar · siklus 1</div>
+          <div class="artefak-title">Modul Ajar — Pseudocode</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1Mm0rQA8i7-ZSzcZ74dXFc2H0Nhy3gV9J/view" target="_blank" class="media-link" style="margin-left:auto;">↗ Drive</a>
+      </div>
+      <div class="artefak-body">
+        <div class="analisis-tabs">
+          <button class="atab active" data-tab="lk4" onclick="switchTab('modul-s1','lk4')">Analisis Artefak</button>
+          <button class="atab" data-tab="file" onclick="switchTab('modul-s1','file')">File Preview</button>
+        </div>
+
+        <div id="modul-s1">
+          <!-- TAB ANALISIS -->
+          <div class="analisis-panel panel-lk4 active">
+            <div style="padding:1.4rem 1.6rem;">
+              <div class="analisis-grid">
+                <div class="analisis-card"><div class="analisis-card-label">Konteks</div><div class="analisis-card-text">Kelas X TP, 1 pertemuan, materi pseudocode.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Tujuan</div><div class="analisis-card-text">Memandu siswa memahami konsep dan praktik pseudocode.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Kelebihan</div><div class="analisis-card-text">Alur runtut dari pengenalan hingga implementasi</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Kekurangan</div><div class="analisis-card-text">Perlu variasi tantangan yang lebih interaktif.</div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB FILE PREVIEW -->
+          <div class="analisis-panel panel-file">
+            <div style="padding:1.4rem 1.6rem;">
+              <div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden; border-radius: 6px; border: 1px solid var(--border2); background: var(--bg3);">
+                <iframe 
+                  src="https://drive.google.com/file/d/1Mm0rQA8i7-ZSzcZ74dXFc2H0Nhy3gV9J/preview" 
+                  title="Preview Modul Ajar"
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem; font-size: 0.75rem; color: var(--muted);">
+                <span>💡 Kendala preview? Buka langsung di Google Drive:</span>
+                <a href="https://drive.google.com/file/d/1Mm0rQA8i7-ZSzcZ74dXFc2H0Nhy3gV9J/view" target="_blank" class="btn-primary" style="font-size: 0.7rem; padding: 4px 10px;">Buka di Tab Baru ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 2. MEDIA PEMBELAJARAN INTERAKTIF (GENIALLY) -->
+    <div id="media-genially" class="artefak-block" style="margin-bottom: 2rem;">
+      <div class="artefak-header">
+        <div class="artefak-icon">✨</div>
+        <div>
+          <div class="artefak-type">media pembelajaran interaktif · genially</div>
+          <div class="artefak-title">Media Presentasi Interaktif — Genially</div>
+        </div>
+        <a href="URL_GENIALLY_KAMU" target="_blank" class="media-link" style="margin-left:auto;">↗ Genially</a>
+      </div>
+      <div class="artefak-body">
+        <div class="analisis-tabs">
+          <button class="atab active" data-tab="lk4" onclick="switchTab('genially-s1','lk4')">Analisis Artefak</button>
+          <button class="atab" data-tab="file" onclick="switchTab('genially-s1','file')">File Preview</button>
+        </div>
+
+        <div id="genially-s1">
+          <!-- TAB ANALISIS -->
+          <div class="analisis-panel panel-lk4 active">
+            <div style="padding:1.4rem 1.6rem;">
+              <div class="analisis-grid">
+                <div class="analisis-card"><div class="analisis-card-label">Konteks</div><div class="analisis-card-text">Media presentasi interaktif diakses siswa selama pembelajaran pseudocode.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Tujuan</div><div class="analisis-card-text">Meningkatkan keterlibatan visual dan interaksi aktif peserta didik.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Kelebihan</div><div class="analisis-card-text">Visual menarik dan kuis interaktif yang bisa diklik langsung.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Kekurangan</div><div class="analisis-card-text">Membutuhkan koneksi internet yang stabil di dalam lab.</div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB FILE PREVIEW -->
+          <div class="analisis-panel panel-file">
+            <div style="padding:1.4rem 1.6rem;">
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; border: 1px solid var(--border2); background: #000;">
+                <iframe 
+                  src="https://view.genially.com/6a7a9e1831fe95133ab749e9" 
+                  title="Preview Genially"
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                  allowfullscreen="true">
+                </iframe>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem; font-size: 0.75rem; color: var(--muted);">
+                <span>💡 Media tidak muncul? Pastikan status Genially sudah Public:</span>
+                <a href="https://view.genially.com/6a7a9e1831fe95133ab749e9" target="_blank" class="btn-primary" style="font-size: 0.7rem; padding: 4px 10px;">Buka Genially ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 3. LKM -->
+    <div id="lkpd" class="artefak-block" style="margin-bottom: 2rem;">
+      <div class="artefak-header">
+        <div class="artefak-icon">📝</div>
+        <div>
+          <div class="artefak-type">lkm · siklus 1</div>
+          <div class="artefak-title">LKM — Pseudocode</div>
+        </div>
+        <a href="https://docs.google.com/presentation/d/116rfwJsItWrdjBsEzBJ4GST5ZDp_kdH2/view" target="_blank" class="media-link" style="margin-left:auto;">↗ Drive</a>
+      </div>
+      <div class="artefak-body">
+        <div class="analisis-tabs">
+          <button class="atab active" data-tab="lk4" onclick="switchTab('lkpd-s1','lk4')">Analisis Artefak</button>
+          <button class="atab" data-tab="file" onclick="switchTab('lkpd-s1','file')">File Preview</button>
+        </div>
+
+        <div id="lkpd-s1">
+          <!-- TAB ANALISIS -->
+          <div class="analisis-panel panel-lk4 active">
+            <div style="padding:1.4rem 1.6rem;">
+              <div class="analisis-grid">
+                <div class="analisis-card"><div class="analisis-card-label">Konteks</div><div class="analisis-card-text">Dikerjakan secara kelompok saat sesi praktik pembuatan form.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Tujuan</div><div class="analisis-card-text">Memandu penyusunan instrumen survei secara sistematis.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Kelebihan</div><div class="analisis-card-text">Pertanyaan panduan membantu kelompok memulai tugas.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Kekurangan</div><div class="analisis-card-text">Memerlukan rubrik penilaian kualitas pertanyaan yang lebih rinci.</div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB FILE PREVIEW -->
+          <div class="analisis-panel panel-file">
+            <div style="padding:1.4rem 1.6rem;">
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; border: 1px solid var(--border2); background: var(--bg3);">
+                <iframe 
+                  src="https://docs.google.com/presentation/d/116rfwJsItWrdjBsEzBJ4GST5ZDp_kdH2/embed" 
+                  title="Preview LKPD"
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 4. HASIL KERJA SISWA -->
+    <div id="hasil" class="artefak-block">
+      <div class="artefak-header">
+        <div class="artefak-icon">✅</div>
+        <div>
+          <div class="artefak-type">hasil kerja siswa · siklus 1</div>
+          <div class="artefak-title">Hasil Kerja Siswa — Pseudocode</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1LwdhdC4zQUOSFk-iXW-kXdX5CTyQWt2_/view" target="_blank" class="media-link" style="margin-left:auto;">↗ Drive</a>
+      </div>
+      <div class="artefak-body">
+        <div class="analisis-tabs">
+          <button class="atab active" data-tab="lk4" onclick="switchTab('hasil-s1','lk4')">Analisis Artefak</button>
+          <button class="atab" data-tab="file" onclick="switchTab('hasil-s1','file')">File Preview</button>
+        </div>
+        <div id="hasil-s1">
+          <!-- TAB ANALISIS -->
+          <div class="analisis-panel panel-lk4 active">
+            <div style="padding:1.4rem 1.6rem;">
+              <div class="analisis-grid">
+                <div class="analisis-card"><div class="analisis-card-label">Konteks</div><div class="analisis-card-text">Produk Google Form / Lembar Kerja yang berhasil dibuat dan disebarkan antar kelompok.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Tujuan</div><div class="analisis-card-text">Mengukur Ketercapaian Pembelajaran (TP) merancang alat pengumpul data &amp; algoritma.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Kelebihan</div><div class="analisis-card-text">100% kelompok berhasil mempublikasikan form aktif dan mengumpulkan respon.</div></div>
+                <div class="analisis-card"><div class="analisis-card-label">Kekurangan</div><div class="analisis-card-text">Variasi tipe pertanyaan (pilihan ganda vs esai) masih perlu dirapikan.</div></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- TAB FILE PREVIEW (LIVE PREVIEW DRIVE) -->
+          <div class="analisis-panel panel-file">
+            <div style="padding:1.4rem 1.6rem;">
+              <div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden; border-radius: 6px; border: 1px solid var(--border2); background: var(--bg3);">
+                <iframe 
+                  src="https://drive.google.com/file/d/1LwdhdC4zQUOSFk-iXW-kXdX5CTyQWt2_/preview" 
+                  title="Preview Hasil Kerja Siswa"
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.8rem; font-size: 0.75rem; color: var(--muted);">
+                <span>💡 Kendala preview? Buka langsung di Google Drive:</span>
+                <a href="https://drive.google.com/file/d/1LwdhdC4zQUOSFk-iXW-kXdX5CTyQWt2_/view" target="_blank" class="btn-primary" style="font-size: 0.7rem; padding: 4px 10px;">Buka di Tab Baru ↗</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- NAVIGASI BOTTOM -->
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-top: 4rem; flex-wrap: wrap; gap: 1rem;">
+    <a href="index.html#artefak" class="btn-ghost">← Kembali ke Daftar Siklus</a>
+    <a href="siklus2.html" class="btn-primary">Lanjut ke Siklus 2 →</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-logo">siklus 1 · e-portfolio · ppg 2026</div>
+    <div style="margin-top:4px;">Rahma Hayuning Astuti · Informatika · UNY</div>
+  </div>
+  <div class="footer-r">
+    <span>built with ♥ &amp; caffeine</span>
+    <span style="color:var(--border2);">|</span>
+    <span>GitHub Pages</span>
+  </div>
+</footer>
+
+</div> <!-- END PAGE-WRAP -->
+
+<!-- FLOATING DOCK -->
+<div class="floating-dock">
+  <a href="index.html#home" title="Home">🏠</a>
+  <a href="index.html#profil" title="Profil">👤</a>
+  <a href="index.html#artefak" title="Artefak">📁</a>
+  <a href="index.html#lampiran" title="Lampiran GP">📜</a>
+  <a href="index.html#model-guru" title="Model Guru">🎯</a>
+  <a href="index.html#dokumentasi" title="Dokumentasi">📷</a>
+  <a href="refleksi.html" title="Refleksi">🧠</a>
+  <a href="index.html#kontak" title="Kontak">✉️</a>
+  <a href="javascript:void(0)" id="theme-toggle" title="Ganti Tema">🌙</a>
+</div>
+
+<div class="toast-msg" id="toast">📋 Email tersalin ke clipboard!</div>
+
+<script src="shared.js"></script>
+</body>
+</html>

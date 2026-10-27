@@ -158,7 +158,13 @@ document.addEventListener('DOMContentLoaded', () => {
     'model-guru': { dropdownId: 'nav-dropdown-portfolio', label: 'model guru ▾' },
   } : {};
 
-  const siklabels = { siklus1: 'siklus 1 ▾', siklus2: 'siklus 2 ▾', siklus3: 'siklus 3 ▾' };
+  const siklabels = { 
+  terbimbing: 'terbimbing ▾', 
+  siklus1: 'siklus 1 ▾', 
+  siklus2: 'siklus 2 ▾', 
+  siklus3: 'siklus 3 ▾', 
+  siklus4: 'siklus 4 ▾' 
+};
 
   // fungsi: set active dropdown siklus
   function activateSiklusDropdown(page) {
