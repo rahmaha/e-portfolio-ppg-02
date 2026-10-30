@@ -288,15 +288,30 @@ h3 { font-family:var(--sans); font-weight:700; font-size:1.1rem; color:var(--tex
   letter-spacing: 0.06em; transition: 0.15s;
 }
 .btn-primary:hover { background: var(--amber-l); }
+/* ==========================================
+   FIX BUTTON GHOST (Mendukung Tag <a> dan <button>)
+   ========================================== */
 .btn-ghost {
-  display: inline-flex; align-items: center; gap: 8px;
-  border: 1px solid var(--border2); color: var(--muted);
-  padding: 11px 22px; border-radius: 4px;
-  font-family: var(--mono); font-size: 0.78rem;
-  font-weight: 400; text-decoration: none;
-  letter-spacing: 0.06em; transition: 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border2);
+  color: var(--text);              /* Mengikuti warna teks tema aktif */
+  background: transparent;         /* FIX: Menghapus background putih bawaan browser */
+  padding: 11px 22px;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition: 0.15s;
+  cursor: pointer;                /* Memastikan kursor berubah jadi pointer saat di-hover */
 }
-.btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
+
+.btn-ghost:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+  background: var(--amber-dim);    /* Efek sorotan lembut saat kursor menempel */
+}
 
 /* TERMINAL CARD (hero right) */
 .terminal {
